@@ -1,0 +1,5 @@
+Ticker,Shares,Buy Price,Total Invested,Current Price,Current Value,Profit/Loss ($),Profit/Loss (%)
+AAPL,100,$42.00,$4200.00,$332.62,$33262.00,$29062.00,691.95%
+GOOGL,100,$66.00,$6600.00,$279.26,$27926.00,$21326.00,323.12%
+
+TOTAL,,,$10800.00,,$61188.00,$50388.00,466.56%
