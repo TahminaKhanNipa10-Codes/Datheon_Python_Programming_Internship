@@ -12,19 +12,19 @@ def load_data(filepath):
         sys.exit()
 
 def get_bot_response(user_input, dataset):
-    # 1. Normalize user input (lowercase, strip whitespace)
+    # 1). Normalize user input (lowercase, strip whitespace)
     user_input = user_input.lower().strip()
     
-    # 2. Clean exit commands handling
+    # 2). Clean exit commands handling
     if re.search(r"\b(bye|exit|quit)\b", user_input):
         return "Goodbye! Best of luck with your Datheon internship!", True
         
-    # 3. Handle Greetings
+    # 3). Handle Greetings
     for greeting in dataset.get("greetings", []):
         if re.search(rf"\b{greeting}\b", user_input):
             return "Hello! How can I assist you with your Datheon internship today?", False
             
-    # 4. Intent Identification (Regex keyword extraction mapped to JSON FAQs)
+    # 4). Intent Identification (Regex keyword extraction mapped to JSON FAQs)
     faqs = dataset.get("faqs", [])
     
     # Mapping regex keywords to the index of the FAQs list
@@ -39,7 +39,7 @@ def get_bot_response(user_input, dataset):
             if index < len(faqs):
                 return faqs[index]["answer"], False
                 
-    # 5. Graceful fallback for unrecognized queries
+    # 5). Graceful fallback for unrecognized queries
     return "I'm sorry, I didn't quite catch that. You can ask about our hours, how to submit your project, or certificate issuance.", False
 
 def main():
