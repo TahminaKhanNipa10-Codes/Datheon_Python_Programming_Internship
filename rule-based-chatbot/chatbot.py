@@ -29,9 +29,9 @@ def get_bot_response(user_input, dataset):
     
     # Mapping regex keywords to the index of the FAQs list
     intent_patterns = {
-        r"\b(hour|hours|operation|time|open)\b": 0,         # Matches FAQ 1
-        r"\b(submit|project|github|repo|repository)\b": 1,  # Matches FAQ 2
-        r"\b(certificate|receive|issue|when)\b": 2          # Matches FAQ 3
+        r"\b(hour|hours|operation|time|open)\b": 0,         ## Matches FAQ 1
+        r"\b(submit|project|github|repo|repository)\b": 1,  ## Matches FAQ 2
+        r"\b(certificate|receive|issue|when)\b": 2          ## Matches FAQ 3
     }
     
     for pattern, index in intent_patterns.items():
