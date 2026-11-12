@@ -1,27 +1,65 @@
-📈 Stock Portfolio Performance Tracker
+<div align="center">
 
-Datheon Python Programming Internship - Task 2
+# 📈 Stock Portfolio Performance Tracker
 
-A Python utility built to calculate real-time portfolio valuation and persist performance logs to a CSV file.
+**Datheon Python Programming Internship: Task 2**
 
-🎯 Project Features
-Live Prices: Fetches current stock prices using yfinance.
-Valuation Calculation: Automates the math behind tracking stock values, total invested vs. current value, and % gain/loss per holding.
-Data Persistence: Logs portfolio tracking data and transaction histories into portfolio_summary.csv.
-🛠️ Technology Stack
-Language: Python 3
-Standard Library: csv
-External Library: yfinance
-🚀 How to Run
-Navigate to the project directory:
-cd task2-investment-tracker
-Install the dependency:
-pip install yfinance
-Run the tracker script:
-python portfolio.py
-👨‍💻 Author
+A Python utility that calculates real-time portfolio valuation and saves performance logs to a CSV file.
 
-Tahmina Khan Nipa
+![Python](https://img.shields.io/badge/Python-3-blue?logo=python&logoColor=white)
+![yfinance](https://img.shields.io/badge/yfinance-live%20prices-green)
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
 
-GitHub: @TahminaKhanNipa10-Codes
-Datheon Batch: 01
+</div>
+
+---
+
+## 🎯 Features
+
+- **Live Prices:** Fetches current stock prices using `yfinance`.
+- **Valuation Calculation:** Automates tracking of stock values, total invested vs. current value, and % gain/loss per holding.
+- **Data Persistence:** Logs portfolio data and transaction history into `portfolio_summary.csv`.
+
+## 🛠️ Technology Stack
+
+| Category         | Details    |
+|------------------|------------|
+| Language         | Python 3   |
+| Standard Library | `csv`      |
+| External Library | `yfinance` |
+
+## 📁 Project Structure
+
+```text
+task2-investment-tracker/
+├── portfolio.py            # Main tracker script
+└── portfolio_summary.csv   # Generated performance log
+```
+
+## 🚀 How to Run
+
+1. **Navigate to the project directory**
+   ```bash
+   cd task2-investment-tracker
+   ```
+
+2. **Install the dependency**
+   ```bash
+   pip install yfinance
+   ```
+
+3. **Run the tracker**
+   ```bash
+   python portfolio.py
+   ```
+
+## 👩‍💻 Author
+
+**Tahmina Khan Nipa**
+
+- GitHub: [@TahminaKhanNipa10-Codes](https://github.com/TahminaKhanNipa10-Codes)
+- Datheon Batch: 01
+
+---
+
+<div align="center">⭐ If you found this useful, consider giving it a star!</div>
