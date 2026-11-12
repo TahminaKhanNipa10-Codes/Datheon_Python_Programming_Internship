@@ -7,8 +7,8 @@ An interactive, modular console game implementing string manipulation and contro
 ## 🎯 Project Features
 
 * **ASCII Art Visuals:** Dynamic gallows art that updates with each incorrect guess.
-* **Word Selection:** Randomly selects secret words from a dataset/list.
-* **Game Logic:** Tracks previously guessed letters and prevents duplicate penalty deductions.
+* **Word Selection:** Randomly selects secret words from `words.txt` (falls back to a built-in list if the file is missing).
+* **Game Logic:** Tracks previously guessed letters, displays them every round, and prevents duplicate penalty deductions.
 
 ## 🛠️ Technology Stack
 
@@ -19,15 +19,15 @@ An interactive, modular console game implementing string manipulation and contro
 
 1. Navigate to the project directory:
 
-   ```bash
-   cd hangman-cli
-   ```
+```
+cd task1-hangman-cli
+```
 
 2. Run the game script:
 
-   ```bash
-   python hangman.py
-   ```
+```
+python hangman.py
+```
 
 ## 👨‍💻 Author
 
